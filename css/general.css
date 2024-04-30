@@ -1,0 +1,46 @@
+/*
+
+1. TYPOGRAPHY
+-----------------
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+Font Weight (Default) : 400
+
+
+2. COLORS
+-----------
+
+- Primary Color : #e67e22
+
+
+5. SHADOWS
+-------------
+
+
+4. BORDER RADIUS
+------------------
+
+
+5. WHITESPACES
+-----------------
+
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
