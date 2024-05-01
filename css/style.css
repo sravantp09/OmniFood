@@ -1,1 +1,16 @@
+.section-hero {
+}
 
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-items: center;
+  max-width: 130rem; /* 130rem = 130 * 10px = 1300px */
+  margin: 0 auto;
+}
+
+/* specifying image to occupy 100% of the parent container */
+.hero-img > img {
+  width: 100%;
+}
