@@ -44,11 +44,11 @@ SPACING SYSTEM (px)
 html {
   /*  10px/16px = 0.625 => 62.5% , This indicates now 1rem will be 10px  */
   font-size: 62.5%; /*  % indicate the font size changes according to browser font settings */
+  font-family: "Rubik", sans-serif;
 }
 
 body {
   width: 100vw;
-  font-family: sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #555;
