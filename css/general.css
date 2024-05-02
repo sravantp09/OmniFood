@@ -7,13 +7,17 @@ FONT SIZE SYSTEM (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 
 Font Weight (Default) : 400
+500
+600
+700
 
 
 2. COLORS
 -----------
 
 - Primary Color : #e67e22
-
+- Tint : #fdf2e9
+- Shade : #cf711f
 #555
 #333
 
@@ -24,6 +28,7 @@ Font Weight (Default) : 400
 
 4. BORDER RADIUS
 ------------------
+15px or 1.5rem
 
 
 5. WHITESPACES
