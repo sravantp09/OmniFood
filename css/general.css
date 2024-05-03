@@ -58,3 +58,28 @@ body {
   font-weight: 400;
   color: #555;
 }
+
+/* Reusable Grid */
+.grid {
+  display: grid;
+  gap: 9.6rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* For centering container */
+.container {
+  max-width: 120rem; /* 120rem is a standard */
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.align-center {
+  align-items: center;
+}

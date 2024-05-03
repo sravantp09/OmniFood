@@ -56,7 +56,8 @@ a {
   margin: 0 auto;
   padding: 0 3.2rem;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr; */
+  grid-template-columns: repeat(2, 1fr);
   gap: 9.6rem;
   align-items: center;
 }
@@ -154,4 +155,60 @@ a {
 /* specifying image to occupy 100% of the parent container */
 .hero-img > img {
   width: 100%;
+}
+
+/* HOW IT WORKS SECTION */
+.section-how {
+  width: 100%;
+  padding: 9.6rem 0;
+}
+
+.container > span {
+  display: block;
+  text-transform: uppercase;
+  color: #e67e22;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.6rem;
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  font-weight: 700;
+  color: #333;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  margin-bottom: 9.6rem;
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+  margin-bottom: 3.2rem;
+}
+
+.step-number {
+  font-size: 8.6rem;
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 1.2rem;
+}
+
+.step-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.step-img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-img-box > img {
+  width: 35%;
 }
