@@ -225,6 +225,8 @@ because in HTML itself we can't add child elements to images
   display: block;
   border-radius: 50%;
   position: absolute;
+
+  /* Centering */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -242,4 +244,8 @@ because in HTML itself we can't add child elements to images
   padding-bottom: 45%;
   background-color: #fae5d3;
   z-index: -1;
+}
+
+.featured-in {
+  width: 100%;
 }
