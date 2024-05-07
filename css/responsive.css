@@ -1,0 +1,87 @@
+/* 1366px - HD Ready screens */
+
+/* Note:- rem and em units don't depend on html font-size
+ie, even if in html tag 1rem = 10px, in media queries 1rem will be
+always be equal to default browser font-size. ie 16px
+*/
+
+/* 85rem = 1360px */
+@media screen and (max-width: 85rem) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  .hero-heading {
+    font-size: 4.4rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.8rem;
+  }
+
+  .gallery-item {
+    width: 75%;
+  }
+
+  .gallery-item:nth-child(odd) {
+    justify-self: end;
+  }
+}
+
+/* Here when we are on 1200px or 75rem screen the entire rem units
+gets changed from 10px to 9px */
+/* 9px/16px = 0.5652 = 56.52% */
+@media screen and (max-width: 75rem) {
+  html {
+    font-size: 56.25%; /* 9px */
+  }
+
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+
+  .heading-tertiary {
+    font-size: 2.4rem;
+  }
+
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+}
+
+@media screen and (max-width: 69rem) {
+  .hero {
+    gap: 3.6rem;
+  }
+
+  .header {
+    padding: 0 3.2rem;
+  }
+
+  .testimonial-container {
+    padding: 3.2rem;
+  }
+
+  .pricing-plan {
+    padding: 4.6rem 2.4rem 3.6rem;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 1.6rem 2.4rem;
+  }
+
+  .logos > img {
+    height: 2.8rem;
+  }
+
+  .main-nav-items {
+    gap: 3.2rem;
+  }
+}
+
+@media screen and (max-width: 56rem) {
+}
