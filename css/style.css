@@ -298,6 +298,7 @@ because in HTML itself we can't add child elements to images
 
 .meals:hover {
   transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.065);
 }
 
 .meals > img {
@@ -398,6 +399,8 @@ because in HTML itself we can't add child elements to images
   display: inline-block;
   font-size: 1.8rem;
   color: #e67e22;
+
+  /* currentColor means use the current element font color */
   border-bottom: 1px solid currentColor;
   padding-bottom: 2px;
   cursor: pointer;
@@ -407,4 +410,208 @@ because in HTML itself we can't add child elements to images
 .link-all:hover,
 .linl-all:active {
   border-bottom: 1px solid transparent;
+}
+
+/* TESTIMONIAL SECTION */
+.section-testimonials {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  align-items: center;
+  background-color: #fae5d3;
+}
+
+.testimonial-container {
+  padding: 9.6rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+
+.gallery-item {
+  overflow: hidden;
+}
+
+.gallery-item img {
+  width: 100%;
+  transition: all 0.5s;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1);
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 4.8rem;
+  column-gap: 8rem;
+}
+
+.testimonial > img {
+  width: 6.4rem;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+}
+
+.testimonial-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 1.6rem;
+}
+
+.testimonial-name {
+  font-size: 1.6rem;
+  color: #6f6f6f;
+}
+
+/* PRICING SECTION */
+.section-pricing {
+  width: 100%;
+  padding: 9.6rem 0;
+}
+
+.pricing-plan:first-child {
+  justify-self: end;
+  border: 2px solid #fdf2e9;
+  padding: 4.6rem;
+}
+
+.pricing-plan {
+  width: 75%;
+  border-radius: 11px;
+}
+
+.plan-header {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+
+.plan-name {
+  color: #cf711f;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 3.2rem;
+}
+
+.plan-price {
+  color: #333;
+  font-size: 6.2rem;
+  font-weight: 600;
+  margin-bottom: 1.6rem;
+}
+
+.plan-price > span {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-right: 0.8rem;
+}
+
+.plan-text {
+  font-size: 1.6rem;
+  color: #6f6f6f;
+  line-height: 1.6;
+}
+
+.pricing-plan:last-child {
+  background-color: #fdf2e9;
+  padding: 4.8rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.plan-signup {
+  text-align: center;
+  margin-top: 4.8rem;
+  cursor: pointer;
+}
+
+.pricing-plan:last-child::after {
+  content: "Best Value";
+  text-transform: uppercase;
+  position: absolute;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #333;
+  background-color: #ffd43b;
+  padding: 0.8rem 8rem;
+  top: 6%;
+  right: -19%;
+  transform: rotate(45deg);
+}
+
+.pricing-info {
+  text-align: center;
+  margin-top: 4.8rem;
+  margin-bottom: 9.6rem;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.feature-icon {
+  height: 3.2rem;
+  width: 3.2rem;
+  color: #e67e22;
+  background-color: #fdf2e9;
+  padding: 1.6rem;
+  margin-bottom: 3.2rem;
+  border-radius: 50%;
+}
+
+.feature-title {
+  color: #333;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+
+.feature-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+/* SECTION CALL TO ACTION */
+.section-cta {
+  width: 100%;
+  padding: 9.6rem 0;
+}
+
+.cta {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+  overflow: hidden;
+  border-radius: 11px;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+}
+
+.cta-text-box {
+}
+
+.cta-img-box {
+  width: 100%;
+  background-image: linear-gradient(to right, #fff, #888),
+    url("../img/eating.jpg");
+  background-size: cover;
+  background-position: center;
 }
