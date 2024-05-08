@@ -1,5 +1,7 @@
-// script
+"use strict";
 
-let a = "2" + 2 - "2"; // "22" - "2" = 20
-console.log(a); // 20
-console.log(typeof a); // number
+const mobileNav = document.querySelector(".mobile-nav");
+
+mobileNav.addEventListener("click", () => {
+  document.querySelector(".header").classList.toggle("nav-open");
+});

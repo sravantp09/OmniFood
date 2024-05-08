@@ -50,6 +50,7 @@ html {
   /*  10px/16px = 0.625 => 62.5% , This indicates now 1rem will be 10px  */
   font-size: 62.5%; /*  % indicate the font size changes according to browser font settings */
   font-family: "Rubik", sans-serif;
+  overflow-x: hidden;
 }
 
 body {
@@ -57,6 +58,7 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+  overflow-x: hidden;
 }
 
 /* Reusable Grid */
@@ -87,4 +89,13 @@ body {
 
 .align-center {
   align-items: center;
+}
+
+/* Mobile Navigation */
+.mobile-nav {
+  display: none;
+}
+
+.close-mobile-nav {
+  display: none;
 }
