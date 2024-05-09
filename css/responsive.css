@@ -250,3 +250,196 @@ gets changed from 10px to 9px */
     padding: 2.4rem 4.8rem !important;
   }
 }
+
+/* 43.75rem = 700px */
+@media screen and (max-width: 44rem) {
+  .logos > img {
+    height: 1.8rem;
+  }
+
+  .grid {
+    row-gap: 4.8rem;
+  }
+
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .diets {
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+
+  .heading-secondary {
+    margin-bottom: 4.6rem;
+  }
+
+  .section-hero {
+    padding: 3.2rem 0;
+  }
+
+  .section-how {
+    padding: 6.4rem 0;
+  }
+
+  .section-meals {
+    padding: 6.4rem 0;
+  }
+
+  .section-pricing {
+    padding: 6.4rem 0;
+  }
+
+  .section-cta {
+    padding: 3.2rem 0 6.4rem;
+  }
+
+  footer {
+    padding: 6.4rem;
+  }
+
+  .plan-header {
+    margin-bottom: 3.2rem;
+  }
+
+  .pricing-plan {
+    width: 100%;
+    padding: 3.6rem 2.4rem 3.6rem;
+  }
+
+  .pricing-plan:last-child::after {
+    content: "Best Value";
+    text-transform: uppercase;
+    position: absolute;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #333;
+    background-color: #ffd43b;
+    padding: 0.4rem 1rem;
+    top: 0;
+    right: 0;
+    transform: rotate(0);
+    width: 50%;
+    text-align: center;
+  }
+
+  .plan-name {
+    margin-bottom: 2.4rem;
+  }
+
+  .plan-price {
+    font-size: 5.2rem;
+  }
+
+  .list {
+    gap: 1.2rem;
+  }
+
+  .plan-signup {
+    margin-top: 3.2rem;
+  }
+
+  .grid-footer {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .nav-col {
+    grid-row: 1 / 2;
+    grid-column: span 2;
+    margin-bottom: 2.4rem;
+  }
+
+  .logo-col {
+    grid-column: span 3;
+  }
+
+  .address-col {
+    grid-column: span 3;
+  }
+}
+
+/* Phones */
+/* 544px */
+@media screen and (max-width: 34rem) {
+  footer {
+    padding: 3.2rem;
+  }
+
+  .logos {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    row-gap: 2rem;
+  }
+
+  .logos img {
+    height: 2.2rem;
+    grid-column: span 2;
+  }
+
+  .logos img:last-child {
+    grid-column: span 3;
+    justify-self: center;
+  }
+
+  .logos img:nth-last-child(2) {
+    grid-column: span 3;
+    justify-self: center;
+  }
+
+  .grid--2-cols,
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding: 0 3.2rem;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 1.4rem 1.6rem;
+  }
+
+  .hero-img > img {
+    width: 80%;
+  }
+
+  .meals {
+    margin: 2.4rem;
+  }
+
+  .meals-content {
+    padding: 3.2rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3.2rem;
+  }
+
+  /* changing grid elements position */
+  .how-elems div:nth-child(2) {
+    grid-row: 1;
+  }
+
+  .how-elems div:last-child {
+    grid-row: 5;
+  }
+
+  .testimonial-container {
+    padding: 3.2rem;
+  }
+
+  .cta {
+    grid-template-columns: 1fr;
+  }
+
+  /* given because this has no content and inorder to make it visible we need to specify a height */
+  .cta-img-box {
+    height: 32rem;
+    grid-row: 1;
+  }
+}
