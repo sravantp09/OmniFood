@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,6 +17,7 @@
     <link rel="stylesheet" href="/css/responsive.css" />
     <title>OmniFood - Road to a healthly lifestyle</title>
 
+    <!-- Scripts -->
     <script defer src="/script.js"></script>
   </head>
   <body>
@@ -53,10 +55,12 @@
               eat healthy again. Tailored to your personal tastes and
               nutritional needs. We have delivered 250,000+ meals last year!
             </p>
-            <a href="#" class="btn btn--full margin-right-sm"
+            <a href="#cta" class="btn btn--full margin-right-sm"
               >Start eating well</a
             >
-            <a href="#" class="btn btn--outline">Learn more &darr;</a>
+            <a href="#how-it-works" class="btn btn--outline"
+              >Learn more &darr;</a
+            >
             <div class="delivered-meals">
               <div class="delivered-imgs">
                 <img src="/img/customers/customer-1.jpg" alt="customer photo" />
@@ -870,5 +874,8 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+
+    <!-- Polyfilling smooth scroll for Safari browsers -->
+    <script src="https://unpkg.com/zenscroll@4.0.2/zenscroll-min.js"></script>
   </body>
 </html>

@@ -51,6 +51,9 @@ html {
   font-size: 62.5%; /*  % indicate the font size changes according to browser font settings */
   font-family: "Rubik", sans-serif;
   overflow-x: hidden;
+
+  /*  May not works in some older versions of browsers. Safari, Edge */
+  /* scroll-behavior: smooth; */
 }
 
 body {
