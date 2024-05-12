@@ -23,7 +23,8 @@ navItems.forEach((item) => {
 });
 
 //Scroll Behaviour
-const allLinks = document.querySelectorAll("a:link");
+const allLinks = document.querySelectorAll("a:link"); // selecting all links in the webpage.
+console.log(allLinks);
 
 allLinks.forEach((link) => {
   link.addEventListener("click", (e) => {
@@ -50,3 +51,29 @@ allLinks.forEach((link) => {
     }
   });
 });
+
+// STICKY NAVIGATION
+
+// We are observing hero section and once it moves out of the viewport we will
+// make the header section sticky.
+const heroSectionElm = document.querySelector(".section-hero");
+const header = document.querySelector("#header");
+// For observing hero section
+const obs = new IntersectionObserver(
+  function (entries) {
+    const ent = entries[0];
+
+    if (!ent.isIntersecting) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
+  },
+  {
+    // in the view port
+    root: null,
+    threshold: 0,
+  }
+);
+
+obs.observe(heroSectionElm);
