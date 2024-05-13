@@ -632,7 +632,7 @@ because in HTML itself we can't add child elements to images
       rgba(235, 151, 78, 0.35),
       rgba(230, 125, 34, 0.35)
     ),
-    url(../img/eating.jpg);
+    url(../img/eating.webp);
   background-size: cover;
   background-position: center;
 }
